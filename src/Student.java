@@ -20,13 +20,13 @@ public class Student {
     }
 
     public void setUpgrade(){
-        if (grade > 'A' && grade <='F'){ //A cannot be upgrade and other than ABCDEF is ignored
+        if (grade > 'A' && grade <='F'){ //If the grade is already an A, it cannot be upgraded
             setGrade(--grade);
         }
     }
 
     public void setDowngrade() {
-        if (grade >= 'A' && grade <'F'){ //F cannot be downgrade and other than ABCDEF is ignored
+        if (grade >= 'A' && grade <'F'){ //If the grade is already a F, it cannot be downgraded
             setGrade(++grade);
         }
     }
